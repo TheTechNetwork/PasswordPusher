@@ -2,7 +2,7 @@
 #
 # This file uses YAML syntax.  Indentation must be 2 spaces (not tabs).
 #
-# See also https://github.com/pglombardo/PasswordPusher/blob/master/Configuration.md
+# See also https://docs.pwpush.com/docs/config-strategies/
 # for a further explanation of the larger settings available here.
 
 ### Application Defaults
@@ -736,7 +736,7 @@ mail:
   # Important: Comment this out if your server doesn't require authentication.
   #
   # Environment Variable Override: PWP__MAIL__SMTP_AUTHENTICATION='plain'
-  smtp_authentication: 'plain'
+  # smtp_authentication: 'plain'
 
   # If your mail server requires authentication, set the username in this setting.
   # Environment Variable Override: PWP__MAIL__SMTP_USER_NAME='apikey'
@@ -790,9 +790,6 @@ feedback:
 #
 # Pre-compilation isn't supported in this yaml file.  It is only supported
 # through the environment variable PWP_PRECOMPILE='true'.
-#
-# See the following for more information:
-# https://github.com/pglombardo/PasswordPusher/blob/master/Configuration.md#how-to-precompile-css-assets
 #
 # Environment Variable: PWP_PRECOMPILE='false'
 
